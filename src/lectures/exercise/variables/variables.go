@@ -5,6 +5,7 @@
 //
 //Requirements:
 //* Store your favorite color in a variable using the `var` keyword
+
 //* Store your birth year and age (in years) in two variables using
 //  compound assignment
 //* Store your first & last initials in two variables using block assignment
@@ -25,4 +26,29 @@ package main
 import "fmt"
 
 func main() {
+	//Requirements:
+//* Store your favorite color in a variable using the `var` keyword
+var favoriteColor = "Green"
+fmt.Println(favoriteColor)
+
+//* Store your birth year and age (in years) in two variables using
+year, age := 1983, 40
+
+fmt.Println(year, age)
+//  compound assignment
+//* Store your first & last initials in two variables using block assignment
+var (
+	firstInit = "D"
+	lastInit = "A"
+)
+
+fmt.Print(firstInit)
+fmt.Print(lastInit)
+//* Declare (but don't assign!) a variable for your age (in days),
+var ageInDays int
+//  then assign it on the next line by multiplying 365 with the age
+ageInDays = age * 365
+// 	variable created earlier
+
+fmt.Println("age in days :",ageInDays)
 }
